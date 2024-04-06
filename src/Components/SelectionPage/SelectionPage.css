@@ -1,28 +1,33 @@
-.wrapper {
+.wrap {
   display: block;
   text-align: center;
+  transition: all ease 300ms;
 }
 
 .page-title {
-    margin-top:3rem ;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .options {
-
   display: flex;
   width: 45rem;
   margin: 0 auto;
-  margin-top:3rem;
+  margin-top: 1rem;
   justify-content: space-around;
 }
 
 .option {
-  width: 10rem;
+  width: 12rem;
   height: 12rem;
   border-radius: 1rem;
   padding: 0.75rem;
+  padding-bottom: 1.5rem;
   border: 2px rgb(200, 200, 200) solid;
-  transition: transform ease 300ms
+  transition: all ease 300ms;
+  -webkit-transition: transform 1.05s ease-in-out;
+  -moz-transition:transform 1.05s ease-in-out;
+  -ms-transition:transform 1.05s ease-in-out;
 }
 
 .option .title {
@@ -30,42 +35,55 @@
 }
 
 .option p {
-    font-size: 0.75rem;
-    color:gray;
-    display: none;
-    transition: transform ease 300ms
+  font-size: 0.75rem;
+  color: gray;
+  display: none;
 }
 .option:hover {
-    border: 2px solid #ea4b8a;
+  border: 2px solid #ea4b8a;
+  box-shadow: 0px 5px rgb(147, 147, 147);
 }
 
-.option:hover .option p { 
-        display: block;
-        transform: translateY(-4.5rem);   
+.option:hover p {
+  display: block;
+  transform: translateY(-4.5rem);
 }
 
-.option:hover + .option .translate {
-    transform: translateY(-4.5rem);
+.option:hover .translate {
+  transform: translateY(-4.5rem);
 }
 
-.option:hover + .option img {
-    transform: scale(1.3);
+.option:hover img {
+  transform: scale(1.3);
 }
 
-.option:hover + .option label {
-    transform: translateY(-4.5rem);
+
+
+.option:has(input:checked) {
+  border: 2px solid #ea4b8a;
+  /* box-shadow: 0px 5px rgb(147, 147, 147); */
+}
+
+.option:has(input:checked) p{
+  display: block;
+  transform: translateY(-4.5rem);
+}
+
+.option:has(input:checked) .translate {
+  transform: translateY(-4.5rem);
+}
+
+.option:has(input:checked) img {
+  transform: scale(1.3);
 }
 
 
 .option img {
-    width: 7rem;
+  width: 7rem;
 }
 
-
-
-/* Customize the label (the container) */
-.container {
-  margin-top:0.5rem;
+.box {
+  margin-top: 0.5rem;
   display: block;
   position: relative;
   align-self: center;
@@ -78,7 +96,6 @@
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .option input {
   position: absolute;
   opacity: 0;
@@ -87,11 +104,10 @@
   width: 0;
 }
 
-/* Create a custom checkbox */
-.checkmark {
+.check-mark {
   position: absolute;
-  left: 4.25rem;
-  top: 0;
+  left: 5.25rem;
+  top: 10.5rem;
   bottom: 1rem;
   height: 25px;
   width: 25px;
@@ -99,30 +115,25 @@
   border-radius: 1rem;
 }
 
-/* On mouse-over, add a grey background color */
-.option:hover input ~ .checkmark {
+.option:hover input ~ .check-mark {
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
-.option input:checked ~ .checkmark {
+.option input:checked ~ .check-mark {
   background-color: #ea4b8a;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.check-mark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
-.option input:checked ~ .checkmark:after {
+.option input:checked ~ .check-mark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
-.option .checkmark:after {
+.option .check-mark:after {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -135,20 +146,20 @@
 }
 
 .bottom p:first-child {
-    font-weight: bold;
-    margin-top:2rem;
+  font-weight: bold;
+  margin-top: 2rem;
 }
 
 .bottom button {
   border: none;
   border: 2px transparent solid;
-  padding: 0.75rem;
+  padding: 0.75rem 0;
   border-radius: 0.5rem;
   width: 12rem;
   font-weight: bold;
   color: #eee;
   background-color: #ea4b8b;
-  margin-top: 1rem;
+  margin: 0.5rem 0;
   transition: 0.3s;
 }
 
@@ -162,4 +173,16 @@
   color: #f00a66;
   background-color: white;
   border: 2px solid #f00a66;
+}
+
+.bottom p{
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.return, .return a {
+  font-weight: bold;
+  color: gray;
+  padding-bottom: 3rem;
 }
