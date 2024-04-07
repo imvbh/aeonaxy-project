@@ -1,7 +1,11 @@
 import React from "react";
 import "./ImageLocation.css";
+import { useNavigate } from "react-router-dom";
+
 
 const ImageLocation = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="wrapp">
       <div className="title">
@@ -32,7 +36,7 @@ const ImageLocation = () => {
         />
       </div>
       <div className="bottom">
-        <button className="button">Next</button>
+        <button className="button" onClick={() => navigate("/select")}>Next</button>
         <p className="return">
           or press <a href="/">RETURN</a>
         </p>
