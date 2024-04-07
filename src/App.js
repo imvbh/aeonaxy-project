@@ -3,11 +3,15 @@ import "./App.css";
 import SignupForm from "./Components/SignupForm/SignupForm";
 import SelectionPage from "./Components/SelectionPage/SelectionPage";
 import ImageLocation from "./Components/ImageLocation/ImageLocation";
+import Verification from "./Components/Verification/Verification";
 
 function App() {
   return (
     <div>
-      <ImageLocation/>
+      <SignupForm/>
+      {/* <ImageLocation/> */}
+      {/* <SelectionPage/> */}
+      {/* <Verification/> */}
       
     </div>
   );
