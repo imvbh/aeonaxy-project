@@ -8,10 +8,10 @@ import Verification from "./Components/Verification/Verification";
 function App() {
   return (
     <div>
-      {/* <SignupForm/> */}
+      <SignupForm/>
       {/* <ImageLocation/> */}
       {/* <SelectionPage/> */}
-      <Verification/>
+      {/* <Verification/> */}
       
     </div>
   );
