@@ -36,7 +36,7 @@ const ImageLocation = () => {
         />
       </div>
       <div className="bottom">
-        <button className="button" onClick={() => navigate("/select")}>Next</button>
+        <button className="button" onClick={() => navigate("/aeonaxy-project/select")}>Next</button>
         <p className="return">
           or press <a href="/">RETURN</a>
         </p>

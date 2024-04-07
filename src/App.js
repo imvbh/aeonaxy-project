@@ -10,11 +10,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SignupForm/>}></Route>
-        <Route path="/create" element={<ImageLocation/>} />
-        <Route path="/select" element={<SelectionPage/>} />
-        <Route path="/verify" element={<Verification />} />
-        <Route path="*" element={<Notfound/>}/>
+        <Route path="/aeonaxy-project/" element={<SignupForm/>}></Route>
+        <Route path="/aeonaxy-project/create" element={<ImageLocation/>} />
+        <Route path="/aeonaxy-project/select" element={<SelectionPage/>} />
+        <Route path="/aeonaxy-project/verify" element={<Verification />} />
+        <Route path="/aeonaxy-project/*" element={<Notfound/>}/>
       </Routes>
     </BrowserRouter>
   );

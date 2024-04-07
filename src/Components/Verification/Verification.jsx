@@ -9,7 +9,7 @@ const Verification = () => {
   return (
     <div className="body">
       <div className="nav">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Dribbble_Text_Logo_Script.svg/615px-Dribbble_Text_Logo_Script.svg.png" alt="" onClick={() => navigate("/")} />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Dribbble_Text_Logo_Script.svg/615px-Dribbble_Text_Logo_Script.svg.png" alt="" onClick={() => navigate("/aeonaxy-project/")} />
         <a href="/">Inspiration</a>
         <a href="/">Find Work</a>
         <a href="/">Learn Design</a>
