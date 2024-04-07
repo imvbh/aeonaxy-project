@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/aeonaxy-project/static/css/main.a3313951.css",
-    "main.js": "/aeonaxy-project/static/js/main.f03d9cc7.js",
+    "main.css": "/aeonaxy-project/static/css/main.60f63704.css",
+    "main.js": "/aeonaxy-project/static/js/main.6c2e2c11.js",
     "static/js/453.eaec36d9.chunk.js": "/aeonaxy-project/static/js/453.eaec36d9.chunk.js",
-    "static/media/logo.svg": "/aeonaxy-project/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/aeonaxy-project/index.html",
-    "main.a3313951.css.map": "/aeonaxy-project/static/css/main.a3313951.css.map",
-    "main.f03d9cc7.js.map": "/aeonaxy-project/static/js/main.f03d9cc7.js.map",
+    "main.60f63704.css.map": "/aeonaxy-project/static/css/main.60f63704.css.map",
+    "main.6c2e2c11.js.map": "/aeonaxy-project/static/js/main.6c2e2c11.js.map",
     "453.eaec36d9.chunk.js.map": "/aeonaxy-project/static/js/453.eaec36d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3313951.css",
-    "static/js/main.f03d9cc7.js"
+    "static/css/main.60f63704.css",
+    "static/js/main.6c2e2c11.js"
   ]
 }
