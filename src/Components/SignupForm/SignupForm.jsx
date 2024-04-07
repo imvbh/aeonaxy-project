@@ -74,7 +74,7 @@ const SignupForm = () => {
             </label>
           </div>
           <div className="submit">
-            <button type="submit" onClick={() => navigate("/create")}>
+            <button type="submit" onClick={() => navigate("/aeonaxy-project/create")}>
               Create Account
             </button>
           </div>

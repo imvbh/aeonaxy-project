@@ -1,10 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Notfound = () => {
-  return (
-    <div>Notfound</div>
-  )
-}
+  const navigate = useNavigate();
 
-export default Notfound
+  return <div>Notfound
+    <a href="/" onClick={() => navigate("/aeonaxy-project/")}>this page doesnt exist. Go home</a>
+  </div>;
+};
+
+export default Notfound;

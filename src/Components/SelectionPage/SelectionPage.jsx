@@ -71,7 +71,7 @@ const SelectionPage = () => {
       </div>
       <div className="bottom">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button onClick={() => navigate("/verify")}>Finish</button>
+        <button onClick={() => navigate("/aeonaxy-project/verify")}>Finish</button>
         <p className="return">
           or press <a href="/">RETURN</a>
         </p>
