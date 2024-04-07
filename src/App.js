@@ -4,7 +4,7 @@ import SignupForm from "./Components/SignupForm/SignupForm";
 import ImageLocation from "./Components/ImageLocation/ImageLocation";
 import Verification from "./Components/Verification/Verification"
 import SelectionPage from "./Components/SelectionPage/SelectionPage";
-// import Notfound from "./Components/NotFound/Notfound";
+import Notfound from "./Components/NotFound/Notfound";
 
 function App() {
   return (
