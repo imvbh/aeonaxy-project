@@ -6,6 +6,7 @@ import Verification from "./Components/Verification/Verification"
 import SelectionPage from "./Components/SelectionPage/SelectionPage";
 
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +15,7 @@ function App() {
         <Route path="/aeonaxy-project/create" element={<ImageLocation/>} />
         <Route path="/aeonaxy-project/select" element={<SelectionPage/>} />
         <Route path="/aeonaxy-project/verify" element={<Verification />} />
-        <Route path="/aeonaxy-project/*" element={<Notfound/>}/>
+
       </Routes>
     </BrowserRouter>
   );
