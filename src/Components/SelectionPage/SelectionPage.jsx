@@ -1,7 +1,12 @@
 import React from "react";
 import "./SelectionPage.css";
+import { useNavigate } from "react-router-dom";
+
+
 
 const SelectionPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="wrap">
       <div className="page-title">
@@ -66,7 +71,7 @@ const SelectionPage = () => {
       </div>
       <div className="bottom">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>Finish</button>
+        <button onClick={() => navigate("/verify")}>Finish</button>
         <p className="return">
           or press <a href="/">RETURN</a>
         </p>

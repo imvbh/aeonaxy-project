@@ -1,11 +1,15 @@
 import React from "react";
 import "./Verification.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Verification = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="body">
       <div className="nav">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Dribbble_Text_Logo_Script.svg/615px-Dribbble_Text_Logo_Script.svg.png" alt="" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Dribbble_Text_Logo_Script.svg/615px-Dribbble_Text_Logo_Script.svg.png" alt="" onClick={() => navigate("/signup")} />
         <a href="/">Inspiration</a>
         <a href="/">Find Work</a>
         <a href="/">Learn Design</a>
@@ -62,11 +66,11 @@ const Verification = () => {
         </li>
 
         <li>
-          <a href="#">Print</a>
+          <a href="/">Print</a>
         </li>
             
         <li>
-          <a href="#">Alternative Ads</a>
+          <a href="/">Alternative Ads</a>
         </li>
       </ul>
     </li>
@@ -76,27 +80,27 @@ const Verification = () => {
       
       <ul class="nav__ul nav__ul--extra">
         <li>
-          <a href="#">Hardware Design</a>
+          <a href="/">Hardware Design</a>
         </li>
         
         <li>
-          <a href="#">Software Design</a>
+          <a href="/">Software Design</a>
         </li>
         
         <li>
-          <a href="#">Digital Signage</a>
+          <a href="/">Digital Signage</a>
         </li>
         
         <li>
-          <a href="#">Automation</a>
+          <a href="/">Automation</a>
         </li>
         
         <li>
-          <a href="#">Artificial Intelligence</a>
+          <a href="/">Artificial Intelligence</a>
         </li>
         
         <li>
-          <a href="#">IoT</a>
+          <a href="/">IoT</a>
         </li>
       </ul>
     </li>
@@ -106,15 +110,15 @@ const Verification = () => {
       
       <ul class="nav__ul">
         <li>
-          <a href="#">Privacy Policy</a>
+          <a href="/">Privacy Policy</a>
         </li>
         
         <li>
-          <a href="#">Terms of Use</a>
+          <a href="/">Terms of Use</a>
         </li>
         
         <li>
-          <a href="#">Sitemap</a>
+          <a href="/">Sitemap</a>
         </li>
       </ul>
     </li>
