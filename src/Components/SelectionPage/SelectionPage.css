@@ -2,6 +2,8 @@
   display: block;
   text-align: center;
   transition: all ease 300ms;
+  padding: 2rem;
+  padding-top: 0;
 }
 
 .page-title {
@@ -11,15 +13,19 @@
 
 .options {
   display: flex;
-  width: 45rem;
+  flex-wrap: wrap;
+  max-width: 55rem;
   margin: 0 auto;
   margin-top: 1rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .option {
-  width: 12rem;
+  max-width: 12rem;
+  min-width: 12rem;
   height: 12rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-radius: 1rem;
   padding: 0.75rem;
   padding-bottom: 1.5rem;
@@ -29,6 +35,8 @@
   -moz-transition:transform 1.05s ease-in-out;
   -ms-transition:transform 1.05s ease-in-out;
 }
+
+
 
 .option .title {
   font-weight: bold;
@@ -185,4 +193,21 @@
   font-weight: bold;
   color: gray;
   padding-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 817px) {
+
+
+  .option:last-child {
+    margin-top:4rem;
+  }
+}
+
+@media screen and (max-width: 565px) {
+
+
+  .option:nth-child(2) {
+    margin-top:4rem;
+  }
 }

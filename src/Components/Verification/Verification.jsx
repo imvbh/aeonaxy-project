@@ -41,7 +41,7 @@ const Verification = () => {
           laborum eveniet in, repellat aliquid vitae natus! Delectus expedita
           autem libero beatae, fugiat quia accusantium.
         </p>
-        <p>Wrong email address? Change it.</p>
+        <p onClick={() => navigate("/aeonaxy-project/")}>Wrong email address? Change it. </p>
       </div>
       <footer class="footer">
   <div class="footer__addr">

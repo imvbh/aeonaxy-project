@@ -72,3 +72,46 @@ button {
     padding-left: 0;
     margin-left: 0;
 }
+
+.return span {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapp {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .wrapp {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image-parent {
+    flex-direction: column;
+
+  }
+
+  .selector {
+    margin-left: 0;
+  }
+
+  .wrapp {
+    width: 20rem;
+  } 
+}
+
+@media screen and (max-width: 430px) {
+  .wrapp {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .wrapp {
+    width: 15rem;
+  }
+}
