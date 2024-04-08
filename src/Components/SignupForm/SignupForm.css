@@ -5,12 +5,15 @@
 
 .image-left {
   width: 35vw;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 10rem;
   background-color: #f2d184;
 }
 
 .image-left span {
+  display: block;
   position: relative;
+  width: 85%;
   top: 5rem;
   left: 3rem;
   color: #846015;
@@ -22,25 +25,25 @@
   position: relative;
   top: 5rem;
   left: 3rem;
-  width: 23rem;
+  width: 80%;
 }
 
 .image-left p {
-    position: relative;
-    color: #846015;
-    top: 20vh;
-    left: 5rem
+  position: relative;
+  color: #846015;
+  top: 60px;
+  left: 5rem;
 }
 
 .image-left p a:link {
-    text-decoration: none;
-    color: #846015;
-    text-decoration: underline;
+  text-decoration: none;
+  color: #846015;
+  text-decoration: underline;
 }
 
 .form-wrapper {
   width: 65vw;
-  height: 100vh;
+  height: 100%;
 
   display: block;
   text-align: center;
@@ -203,4 +206,60 @@ a:active {
 .subbutton p {
   margin: 0;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .image-left {
+    width: 100%;
+  }
+  .image-left img {
+    width: 50%;
+  }
+
+  .form-wrapper {
+    padding-left: 2rem;
+  }
+  .subbutton {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 23rem;
+  }
+
+  .form-wrapper {
+    height: fit-content;
+  }
+  .image-left img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  form {
+    width: 20rem;
+  }
+  .subdiv {
+    flex-direction: column;
+  }
+  .subdiv input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  form {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  form {
+    width: 15rem;
+  }
 }
